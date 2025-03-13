@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>출석 체크 - Step 5</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      padding-top: 100px;
+      background: #f7f7f7;
+    }
+    button {
+      font-size: 20px;
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 8px;
+    }
+  </style>
+  <script>
+    function sendComplete() {
+      window.ReactNativeWebView.postMessage("step5_complete");
+    }
+  </script>
+</head>
+<body>
+  <h1>광고를 모두 시청하셨나요?</h1>
+  <p>광고 완료 후 아래 버튼을 눌러 보상을 받으세요.</p>
+  <button onclick="sendComplete()">보상 받기</button>
+</body>
+</html>
